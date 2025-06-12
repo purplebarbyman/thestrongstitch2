@@ -8,13 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body{font-family:'Montserrat',sans-serif;margin:0;padding:0;line-height:1.6;background-color:#2c2a29;color:#f5f1e9}header{background:rgba(10,10,10,.7);padding:2rem;border-bottom:2px solid #b85c38;box-shadow:0 2px 5px rgba(0,0,0,.5);backdrop-filter:blur(5px)}nav{display:flex;flex-direction:column;align-items:center;gap:1rem}.logo{height:220px;filter:drop-shadow(0 0 8px rgba(255,255,255,.3));margin-bottom:1rem}nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.5rem}nav a{text-decoration:none;color:#f5f5f5;font-weight:700;font-size:1rem;padding:5px 10px;border-radius:5px;transition:color .3s ease,background-color .3s ease}nav a:hover{background-color:#b85c38;color:#fff}main{padding:2rem;max-width:1200px;margin:auto}section{padding:3rem 2rem;background-color:rgba(44,42,41,.9);margin-bottom:2rem;border-radius:8px;border:1px solid #444;box-shadow:0 4px 15px rgba(0,0,0,.5)}h2{color:#b85c38;text-align:center;font-size:2.2rem;margin-bottom:2rem}.content-block{max-width:800px;margin:0 auto;text-align:left}.content-block p{font-size:1.1rem;margin-bottom:1rem}footer{text-align:center;padding:2rem;margin-top:2rem;background:#111;color:#aaa;border-top:2px solid #b85c38}
+        body{font-family:'Montserrat',sans-serif;margin:0;padding:0;line-height:1.6;background-color:#2c2a29;color:#f5f1e9}
+        header{background:rgba(10,10,10,.7);padding:2rem;border-bottom:2px solid #b85c38;box-shadow:0 2px 5px rgba(0,0,0,.5);backdrop-filter:blur(5px)}
+        nav{display:flex;flex-direction:column;align-items:center;gap:1rem}
+        .logo{height:220px;filter:drop-shadow(0 0 8px rgba(255,255,255,.3));margin-bottom:1rem}
+        nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.5rem}
+        nav a{text-decoration:none;color:#f5f5f5;font-weight:700;font-size:1rem;padding:5px 10px;border-radius:5px;transition:color .3s ease,background-color .3s ease}
+        nav a:hover{background-color:#b85c38;color:#fff}
+        main{padding:2rem;max-width:1200px;margin:auto}
+        section{padding:3rem 2rem;background-color:rgba(44,42,41,.9);margin-bottom:2rem;border-radius:8px;border:1px solid #444;box-shadow:0 4px 15px rgba(0,0,0,.5)}
+        h2{color:#b85c38;font-size:2.2rem;margin-bottom:1.5rem;text-align:center}
+        h3{color:#b85c38;font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem}
+        .gallery{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+        .gallery img{max-width:220px;border-radius:8px;border:2px solid #b85c38;background:#fff}
+        .cta-buttons{display:flex;gap:1rem;justify-content:center;margin:2rem 0;flex-wrap:wrap}
+        .btn{display:inline-block;padding:12px 25px;border-radius:5px;text-decoration:none;color:#fff;font-weight:700;transition:background-color .3s ease,transform .2s ease;font-size:1.1rem;cursor:pointer}
+        .btn:hover{transform:translateY(-2px)}
+        .email-btn{background-color:#b85c38}.email-btn:hover{background-color:#8a4326}
+        .whatsapp-btn{background-color:#25D366}.whatsapp-btn:hover{background-color:#128C7E}
+        ul{margin:1rem 0 2rem 1.2rem;}
+        ul li{margin-bottom:.5rem;font-size:1.1rem;}
+        blockquote{font-style:italic;background:rgba(184,92,56,0.12);border-left:4px solid #b85c38;padding:1rem 1.5rem;margin:2rem auto;max-width:700px;border-radius:6px;color:#f5f1e9;}
+        .contact-info{margin-top:2rem;text-align:center;font-size:1.1rem;}
+        .contact-info a{color:#b85c38;text-decoration:underline;}
+        @media (max-width:700px){
+            .gallery{flex-direction:column;align-items:center;}
+            section{padding:2rem 0.5rem;}
+            .cta-buttons{flex-direction:column;}
+        }
+        footer{text-align:center;padding:2rem;margin-top:2rem;background:#111;color:#aaa;border-top:2px solid #b85c38}
+        footer p { text-align: center; margin: 0; }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="https://thestrongstitch.com/cdn/shop/files/Strong_Stitch_Back_9w_300x300.png?v=1.715051e+09" alt="The Strong Stitch Logo" class="logo"></a>
+            <a href="index.html">
+                <img src="https://thestrongstitch.com/cdn/shop/files/Strong_Stitch_Back_9w_300x300.png?v=1.715051e+09" alt="The Strong Stitch Logo" class="logo">
+            </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-websters.html">About the Websters</a></li>
@@ -28,13 +59,36 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Custom Embroidery</h2>
-            <div class="content-block">
-                <p>At The Strong Stitch, we take pride in offering small-business service with big-business quality. Specializing in custom embroidery, we deliver exceptional craftsmanship on a wide range of fabric items, from clothing and hats to bags and more. Whether you’re personalizing for yourself, your business, or your school, we make sure your designs come to life with precision and professionalism.</p>
-                <p>Our commitment to high-quality results is backed by our use of top-of-the-line, commercial-grade equipment. We utilize 5 Happy Japan embroidery machines — one with 12 needles and four with 15 needles — capable of handling the most intricate designs with remarkable speed and accuracy. These machines, combined with our skilled artisans, ensure that every project meets the highest standards of durability and detail.</p>
-                <p>Whether it’s a custom business logo, a school emblem, or even a simple number on the side of a hat, The Strong Stitch delivers professional-grade results that stand up to the demands of everyday use.</p>
-                <p>With us, you get personalized service and attention, backed by the quality and capabilities of a large-scale operation. Let The Strong Stitch help you turn your ideas into high-quality embroidered products!</p>
+        <section id="embroidery">
+            <h2>Custom Embroidery Services</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Embroidered Polo">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Custom Hat Embroidery">
+            </div>
+            <p>
+                We specialize in logo embroidery, monograms, and custom designs on polos, hats, bags, and more. Our commercial-grade machines and premium threads ensure every stitch is strong and vibrant.<br>
+                <strong>Fast turnaround:</strong> Most orders ready in 3-5 business days.<br>
+                <strong>No minimums:</strong> Order one or one hundred.<br>
+                <strong>Bring your own items or order through our <a href="catalog.html" style="color:#b85c38;">catalog</a>.</strong>
+            </p>
+            <div class="cta-buttons">
+                <a href="how-to-order.html" class="btn email-btn">Request a Quote</a>
+                <a href="contact.html" class="btn whatsapp-btn">Contact Us</a>
+            </div>
+            <h3>Frequently Asked Questions</h3>
+            <ul>
+                <li><strong>What file types do you accept?</strong> PNG, JPG, PDF, AI, EPS</li>
+                <li><strong>Can I bring my own shirt?</strong> Yes! We can embroider most garments.</li>
+                <li><strong>How durable is the embroidery?</strong> Our embroidery is made to last for years of wear and washing.</li>
+            </ul>
+            <h3>What Our Customers Say</h3>
+            <blockquote>
+                "The Strong Stitch made our team polos look amazing! Fast, friendly, and top quality." – Jamie R.
+            </blockquote>
+            <div class="contact-info">
+                <p>📧 <a href="mailto:TheStrongStitch@outlook.com">TheStrongStitch@outlook.com</a></p>
+                <p>📱 <a href="https://wa.me/18635133197">Text Amanda</a> | <a href="https://wa.me/18634308711">Text Jordan</a></p>
+                <p>📍 2120 East County Road 540a, Lakeland, FL 33813</p>
             </div>
         </section>
     </main>
