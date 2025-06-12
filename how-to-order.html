@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Strong Stitch | How to Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Montserrat',sans-serif;margin:0;padding:0;line-height:1.6;background-color:#2c2a29;color:#f5f1e9}header{background:rgba(10,10,10,.7);padding:2rem;border-bottom:2px solid #b85c38;box-shadow:0 2px 5px rgba(0,0,0,.5);backdrop-filter:blur(5px)}nav{display:flex;flex-direction:column;align-items:center;gap:1rem}.logo{height:220px;filter:drop-shadow(0 0 8px rgba(255,255,255,.3));margin-bottom:1rem}nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.5rem}nav a{text-decoration:none;color:#f5f5f5;font-weight:700;font-size:1rem;padding:5px 10px;border-radius:5px;transition:color .3s ease,background-color .3s ease}nav a:hover{background-color:#b85c38;color:#fff}main{padding:2rem;max-width:1200px;margin:auto}section{padding:3rem 2rem;background-color:rgba(44,42,41,.9);margin-bottom:2rem;border-radius:8px;border:1px solid #444;box-shadow:0 4px 15px rgba(0,0,0,.5)}h2,h3{color:#b85c38;text-align:center}h2{font-size:2.2rem;margin-bottom:2rem}h3{font-size:1.6rem;margin-top:2rem;text-align:left;border-bottom:1px solid #555;padding-bottom:.5rem;margin-bottom:1rem}.content-block{max-width:800px;margin:0 auto;text-align:left}.content-block p{font-size:1.1rem;margin-bottom:1rem}.contact-buttons{display:flex;justify-content:center;gap:1rem;margin-top:1rem;flex-wrap:wrap}.btn{display:inline-block;padding:12px 25px;border-radius:5px;text-decoration:none;color:#fff;font-weight:700;transition:background-color .3s ease,transform .2s ease;font-size:1.1rem;cursor:pointer}.btn:hover{transform:translateY(-2px)}.email-btn{background-color:#b85c38}.email-btn:hover{background-color:#8a4326}.whatsapp-btn{background-color:#25D366}.whatsapp-btn:hover{background-color:#128C7E}footer{text-align:center;padding:2rem;margin-top:2rem;background:#111;color:#aaa;border-top:2px solid #b85c38}
+        
+        /* FORM STYLES */
+        #quoteFormContainer{margin-top:2rem;padding:2rem;background-color:rgba(10,10,10,0.5);border-radius:8px;border:1px solid #555}
+        .form-group{margin-bottom:1.5rem}
+        .form-group label{display:block;margin-bottom:.5rem;font-weight:700}
+        .form-group input, .form-group select, .form-group textarea{width:100%;padding:10px;border-radius:5px;border:1px solid #555;background-color:#333;color:#f5f1e9;font-size:1rem;box-sizing:border-box}
+        .form-group input::placeholder, .form-group textarea::placeholder{color:#aaa}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="https://thestrongstitch.com/cdn/shop/files/Strong_Stitch_Back_9w_300x300.png?v=1.715051e+09" alt="The Strong Stitch Logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-websters.html">About the Websters</a></li>
+                <li><a href="how-to-order.html">How to Order</a></li>
+                <li><a href="embroidery.html">Embroidery</a></li>
+                <li><a href="digital-printing.html">Digital Printing</a></li>
+                <li><a href="catalog.html">Online Catalog</a></li>
+                <li><a href="scholarship.html">TRT/HM Course Scholarship</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Process & How to Order</h2>
+            <div class="content-block">
+                <h3>Step 1: Consultation & Quote</h3>
+                <p>It all starts with your idea. Reach out to us with what you're looking for, the quantity you need, and any artwork you may have. We'll discuss your options and provide a detailed quote.</p>
+
+                <h3>Step 2: Design & Mockup</h3>
+                <p>We'll work with your design or help create a new one. For embroidery, we'll digitize your art to prepare it for stitching. Before we produce anything, you will receive a digital mockup for your final approval.</p>
+
+                <h3>Step 3: Production</h3>
+                <p>Once you approve the mockup, we get to work! Using our commercial-grade equipment, we'll create your custom items with precision and care, ensuring a professional, high-quality result.</p>
+
+                <h3>Step 4: Completion & Pickup</h3>
+                <p>We'll notify you as soon as your order is ready. You can then stop by our shop to pick up your custom creations.</p>
+
+                <!-- "Ready to Start?" Section -->
+                <div style="margin-top: 3rem; border-top: 1px solid #555; padding-top: 2rem; text-align:center;">
+                    <h3 style="text-align:center; border-bottom:none;">Ready to Start?</h3>
+                    <p style="font-size:1.1rem; text-align:center;">Fill out the form below or contact us directly.</p>
+                    <div class="contact-buttons">
+                        <button id="quoteBtn" class="btn email-btn">Request a Quote</button>
+                        <a href="https://wa.me/18635133197" class="btn whatsapp-btn" target="_blank">Text Amanda</a>
+                        <a href="https://wa.me/18634308711" class="btn whatsapp-btn" target="_blank">Text Jordan</a>
+                    </div>
+                </div>
+
+                <!-- Quote Request Form (Hidden by default) -->
+                <div id="quoteFormContainer" style="display:none;">
+                    <form action="https://formspree.io/f/xovwdkoj" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="Embroidery">Embroidery</option>
+                                <option value="Digital Printing">Digital Printing (DTF)</option>
+                                <option value="Unsure">I'm not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Estimated Quantity</label>
+                            <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g., 12">
+                        </div>
+                        <!-- NEWLY ADDED ITEM NUMBER FIELD -->
+                        <div class="form-group">
+                            <label for="itemNumber">Item Number (Optional)</label>
+                            <input type="text" id="itemNumber" name="itemNumber" placeholder="Enter item number from catalog if applicable"[1]>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="upload">Upload Artwork (Optional)</label>
+                            <input type="file" id="upload" name="upload">
+                        </div>
+                        <button type="submit" class="btn email-btn" style="width:100%;">Send Quote Request</button>
+                    </form>
+                </div>
+                
+                <div style="margin-top: 3rem; text-align:center;">
+                     <h3 style="text-align:center; border-bottom:none;">Visit Our Shop</h3>
+                     <p style="font-size: 1.1rem; line-height:1.8; text-align:center;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=2120+East+County+Road+540a,+Lakeland,+FL+33813" target="_blank" style="color: #f5f1e9; text-decoration: underline;">
+                            2120 East County Road 540a, Lakeland, FL 33813
+                        </a><br>
+                        <strong>Monday - Friday, 10:00am - 2:00pm</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 The Strong Stitch. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to show/hide the form -->
+    <script>
+        document.getElementById('quoteBtn').addEventListener('click', function() {
+            var formContainer = document.getElementById('quoteFormContainer');
+            if (formContainer.style.display === 'none') {
+                formContainer.style.display = 'block';
+            } else {
+                formContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
